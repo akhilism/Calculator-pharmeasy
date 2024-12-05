@@ -7,6 +7,28 @@
   pointer-events: none;
 }
 
+.btn-row {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.single-btn {
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+  width: 40px;
+  cursor: pointer;
+}
+.ops-col {
+  position: fixed;
+  top: 5px;
+  right: 19rem;
+}
+.ops-col .single-btn {
+  margin: 40px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -22,6 +44,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
 .App-link {
@@ -35,4 +58,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.calculator {
+  justify-content: center;
+  align-items: center;
+  border: 2px black solid;
+  display: flex;
+  margin: 10% 50px;
+  flex-direction: column;
+  border-radius: 6px;
+  width: 22em;
+}
+
+.input {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.buttons {
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 5fr);
+  padding: 10px;
+}
+
+.btn {
+  width: 50px;
+  padding: 6px;
+  margin: 10px;
+  border-radius: 6px;
+  border: none;
 }
